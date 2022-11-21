@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-grayish-blue: hsl(236, 13%, 42%, 0.4);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Green: rgb(125, 209, 125);
+    --Yellow: rgb(238, 238, 43);
+    --skyblue: skyblue;
+}
+.main-container{
+    width: 374px;
+    border-radius: 20px;
+    margin:  50px auto;
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    position: relative ;
+    height: 370px;
+    
+}
+.main-container__title{
+    text-align: center;
+    margin: 15px 0;
+    padding-top: 10px;
+}
+.modals{
+    margin: 50px auto;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.modals__text{
+    text-align: center;
+    padding-top: 36px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--Very-dark-blue);
+}
+/*Modal triste*/
+.modal__sad{
+    width: 150px;
+    height: 100px;
+    background-color: var(--Grayish-blue);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.sad-feeling{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: var(--Very-dark-blue);
+    width: 100%;
+    height: 100%;    
+}
+.sad-feeling__title{
+    color: var(--Off-white);
+    text-align: center;
+    font-size: 2.3em;
+    margin: 15px;
+    font-weight: 800;
+}
+.sad-feeling__content{
+    color: var(--Off-white);
+    text-align: center;
+}
+.sad-feeling__btn{
+    display: block;
+    margin: auto;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: var(--Grayish-blue);
+    color: var(--Off-white);
+}
+.sad-feeling__datas{
+    display: block;
+    position: absolute;
+    top: 0px;
+
+    background-color: var(--Very-dark-blue);
+    margin: auto;
+    text-align: center;
+    height: 100%;
+   
+}
+
+.sad-feeling__text1{
+    display: none;
+    margin: 110px 40px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Grayish-blue);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+    border-radius: 20px;
+
+
+}
+.sad-feeling__text2{
+    display: none;
+    margin: 110px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Grayish-blue);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+    border-radius: 20px;
+}
+.sad-feeling__text3{
+    display: none;
+    margin: 110px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Grayish-blue);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+    border-radius: 20px;
+}
+.sad-feeling__text4{
+    display: none;
+    margin: 110px 55px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Grayish-blue);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+    border-radius: 20px;
+}
+.sad-feeling__text5{
+    display: none;
+    margin: 100px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Grayish-blue);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+    border-radius: 20px;
+}
+/*Fin de modal triste*/
+/*Modal Feliz*/
+.modal__happy{
+    width: 150px;
+    height: 100px;
+    background-color: var(--Yellow);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.happy-feeling{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: var(--Very-dark-blue);
+    width: 100%;
+    height: 100%;    
+}
+.happy-feeling__title{
+    color: var(--Off-white);
+    text-align: center;
+    font-size: 2.3em;
+    margin: 15px;
+    font-weight: 800;
+}
+.happy-feeling__content{
+    color: var(--Off-white);
+    text-align: center;
+}
+.happy-feeling__btn{
+    display: block;
+    margin: auto;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: var(--Yellow);
+    color: var(--Off-white);
+}
+.happy-feeling__datas{
+    display: block;
+    position: absolute;
+    top: 0px;
+    background-color: var(--Very-dark-blue);
+    margin: auto;
+    text-align: center;
+    height: 100%;
+   
+}
+
+.happy-feeling__text1{
+    display: none;
+    margin: 150px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Yellow);
+    background-color: beige;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: 600;
+    color: var(--Yellow);
+    border-radius: 20px;
+
+
+}
+.happy-feeling__text2{
+    display: none;
+    margin: 110px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Yellow);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Yellow);
+    border-radius: 20px;
+}
+.happy-feeling__text3{
+    display: none;
+    margin: 105px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Yellow);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Yellow);
+    border-radius: 20px;
+}
+.happy-feeling__text4{
+    display: none;
+    margin: 95px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Yellow);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Yellow);
+    border-radius: 20px;
+}
+
+/* Fin del modal feliz*/
+
+
+/* Modal enojada*/
+.modal__annoyed{
+    width: 150px;
+    height: 100px;
+    background-color: var(--Soft-red);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.annoyed-feeling{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: var(--Very-dark-blue);
+    width: 100%;
+    height: 100%;    
+}
+.annoyed-feeling__title{
+    color: var(--Off-white);
+    text-align: center;
+    font-size: 2.3em;
+    margin: 15px;
+    font-weight: 800;
+}
+.annoyed-feeling__content{
+    color: var(--Off-white);
+    text-align: center;
+}
+.annoyed-feeling__btn{
+    display: block;
+    margin: auto;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+}
+.annoyed-feeling__datas{
+    display: block;
+    position: absolute;
+    top: 0px;
+    background-color: var(--Very-dark-blue);
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    
+   
+}
+
+.annoyed-feeling__text1{
+    display: none;
+    margin: 120px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Soft-red);
+    background-color: beige;
+    align-items: center;
+    padding: 40px 105px;
+    font-weight: 600;
+    color: var(--Soft-red);
+    border-radius: 20px;
+
+
+}
+.annoyed-feeling__text2{
+    display: none;
+    margin: 130px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Soft-red);
+    background-color: beige;
+    align-items: center;
+    padding: 40px 15px;
+    font-weight: 600;
+    color: var(--Soft-red);
+    border-radius: 20px;
+}
+.annoyed-feeling__text3{
+    display: none;
+    margin: 100px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Soft-red);
+    background-color: beige;
+    align-items: center;
+    padding: 40px 15px;
+    font-weight: 600;
+    color: var(--Soft-red);
+    border-radius: 20px;
+}
+.annoyed-feeling__text4{
+    display: none;
+    margin: 120px 50px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Soft-red);
+    background-color: beige;
+    align-items: center;
+    padding: 50px 15px;
+    font-weight: 600;
+    color: var(--Soft-red);
+    border-radius: 20px;
+}
+/* Fin del modal enojada*/
+
+
+
+/*Modal cansada*/
+.modal__tired{
+    width: 150px;
+    height: 100px;
+    background-color: var(--Green);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.tired-feeling{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: var(--Very-dark-blue);
+    width: 100%;
+    height: 100%;    
+}
+.tired-feeling__title{
+    color: var(--Off-white);
+    text-align: center;
+    font-size: 2.3em;
+    margin: 15px;
+    font-weight: 800;
+}
+.tired-feeling__content{
+    color: var(--Off-white);
+    text-align: center;
+}
+.tired-feeling__btn{
+    display: block;
+    margin: auto;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: var(--Green);
+    color: var(--Off-white);
+}
+.tired-feeling__datas{
+    display: block;
+    position: absolute;
+    top: 0px;
+    background-color: var(--Very-dark-blue);
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    
+   
+}
+
+.tired-feeling__text1{
+    display: none;
+    margin: 120px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Green);
+    background-color: beige;
+    align-items: center;
+    padding: 40px 105px;
+    font-weight: 600;
+    color: var(--Green);
+    border-radius: 20px;
+
+
+}
+.tired-feeling__text2{
+    display: none;
+    margin: 120px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Green);
+    background-color: beige;
+    align-items: center;
+    padding: 40px 15px;
+    font-weight: 600;
+    color: var(--Green);
+    border-radius: 20px;
+}
+.tired-feeling__text3{
+    display: none;
+    margin: 120px 10px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Green);
+    background-color: beige;
+    align-items: center;
+    padding: 40px 15px;
+    font-weight: 600;
+    color: var(--Green);
+    border-radius: 20px;
+}
+.tired-feeling__text4{
+    display: none;
+    margin: 120px 15px;
+    font-size: 1.4em;
+    color: var(--Very-dark-blue);
+    border: solid 2px var(--Green);
+    background-color: beige;
+    align-items: center;
+    padding: 50px;
+    font-weight: 600;
+    color: var(--Green);
+    border-radius: 20px;
+}
+.btn-recargar{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.imput-general{
+    padding: 10px 20px;
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+}
